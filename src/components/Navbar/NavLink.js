@@ -1,6 +1,6 @@
 export const NavLink = [
     {
-        title: 'About',
+        title: 'About Me',
         url: '#',
         name: 'nav-links'
     },

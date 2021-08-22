@@ -1,6 +1,5 @@
 import Landing from './components/Landing/Landing';
 import Navbar from './components/Navbar/Navbar';
-import RecentProjects from './components/Landing/RecentProjects';
 import './App.css';
 
 function App() {
@@ -10,7 +9,6 @@ function App() {
         <Navbar />
         <Landing />
       </div>
-      <RecentProjects />
     </>
   );
 }

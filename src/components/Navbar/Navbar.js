@@ -1,10 +1,11 @@
-import React from 'react'
-import { NavLink } from './NavLink'
+import React from 'react';
+import logo from './jl-logo.png';
+import { NavLink } from './NavLink';
 
 function Navbar() {
     return (
             <div className="nav-grid">
-                <div className="logo">JL</div>
+                <div className="logo"><img src={logo} alt="logo"/></div>
                 <ul>
                     {NavLink.map((item, index) => {
                         return (
