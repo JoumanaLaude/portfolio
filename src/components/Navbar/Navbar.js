@@ -5,8 +5,8 @@ import { NavLink } from './NavLink';
 function Navbar() {
     return (
             <div className="nav-grid">
-                <div className="logo"><img src={logo} alt="logo"/></div>
                 <ul>
+                <img className="logo" src={logo} alt="logo"/> 
                     {NavLink.map((item, index) => {
                         return (
                             <div className="nav-links">

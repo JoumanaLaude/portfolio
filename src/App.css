@@ -39,40 +39,30 @@ ul {
   padding: 2rem;
 }
 
-.button {
-  background: var(--lightColor);
-  color: var(--darkColor);
-}
-
 .nav-grid {
   grid-area: nav;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
 }
 
 .nav-links {
   font-size: 1.6rem;
-  letter-spacing: 1px;
+  letter-spacing: .5px;
   text-transform: uppercase;
   padding-left: 1.4rem;
   text-decoration: none;
   list-style-type: none;
 }
 
-.logo {
-  grid-area: logo;
-}
-
 @media only screen and (min-width: 1000px) {
   .landing-grid {
     display: grid;
     height: 100vh;
-    grid-template-columns: repeat(4, minmax(200px, 1fr));
+    grid-template-columns: repeat(4, minmax(300px, 1fr));
     grid-template-rows: repeat(3, minmax(240px, 1fr));
     grid-template-areas:
-      "logo nav nav ."
+      ". nav nav ."
       ". left right .";
   }
   .left { 
@@ -141,7 +131,7 @@ li>a:focus::after{
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 2fr 1fr;
     grid-template-areas: 
-    "logo nav"
+    "nav"
     "left left right";
     padding: 8rem;
   }
@@ -157,10 +147,13 @@ li>a:focus::after{
   .hello {
     padding-top: 2rem;
   }
-  .nav-links {
+  .nav-links, .logo {
     display: none;
   }
   .intro-img {
     max-width: 100%;
   }
+  /* .burger-menu {
+    align-items: right;
+  } */
 }
