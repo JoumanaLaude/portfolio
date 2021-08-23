@@ -62,7 +62,7 @@ ul {
     grid-template-columns: repeat(4, minmax(300px, 1fr));
     grid-template-rows: repeat(3, minmax(240px, 1fr));
     grid-template-areas:
-      ". nav nav ."
+      ". . nav nav"
       ". left right .";
   }
   .left { 
@@ -133,10 +133,15 @@ li>a:focus::after{
     grid-template-areas: 
     "nav"
     "left left right";
-    padding: 8rem;
+    padding: 4rem;
   }
   .hello {
     padding-top: 4rem;
+  }
+  .hello, .intro, .joumana, .right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -153,7 +158,4 @@ li>a:focus::after{
   .intro-img {
     max-width: 100%;
   }
-  /* .burger-menu {
-    align-items: right;
-  } */
 }
