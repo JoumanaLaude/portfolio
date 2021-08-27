@@ -23,6 +23,7 @@ a:link, a:visited {
 
 ul {
   display: flex;
+  flex-direction: row;
 }
 
 .hello {
@@ -39,11 +40,29 @@ ul {
   padding: 2rem;
 }
 
+.socials {
+  display: flex;
+  flex-direction: row;
+  padding-top: .5rem;
+}
+
+.socials>a::after {
+  background: none;
+}
+
+.socials>a:hover, .logo>a:hover {
+  transition: opacity 400ms ease-in-out;
+  opacity: .5;
+}
+
 .nav-grid {
   grid-area: nav;
   display: flex;
   flex-direction: row;
   align-items: center;
+  /* justify-content: end;
+  /* display: grid;
+  grid-template-columns: repeat(4, auto); */
 }
 
 .nav-links {
