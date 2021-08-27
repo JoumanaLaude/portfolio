@@ -81,17 +81,6 @@ ul {
   }
 }
 
-.svg-container {
-  width: auto;
-}
-
-.recent-projects {
-  background-color: #F8E8F8;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-}
-
 a {
 	display: block;
 	position: relative;
@@ -143,7 +132,53 @@ li>a:focus::after{
     flex-direction: column;
     align-items: center;
   }
+  .hello>i {
+    border-right: solid 3px var(--darkColor);
+    white-space: nowrap;
+    overflow: hidden;    
+    font-family: monospace;
+    margin: 0 auto;
+  }
+
+  .hello>i {
+    animation: animated-text 3s steps(29,end) 1s 1 normal both,
+      animated-cursor 500ms steps(29,end) infinite;
+  }
+
+  @keyframes animated-text{
+    from{width: 0;}
+    to{width: 240px;}
+  }
+
+  @keyframes animated-cursor{
+    from{border-right-color: var(--darkColor);}
+    to{border-right-color: transparent;}
+  }
+
+  .joumana {
+    animation: fadeIn 5s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+  }
+  .intro {
+    animation: fadeIn 5s;
+    animation-delay: 6s;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity:0;
+      visibility: hidden;
+    }
+    100% {
+      opacity:1;
+      visibility: visible;
+    }
+  }
 }
+
 
 @media only screen and (max-width: 900px) {
   .landing-grid {
@@ -159,3 +194,14 @@ li>a:focus::after{
     max-width: 100%;
   }
 }
+
+/* .svg-container {
+  width: auto;
+}
+
+.recent-projects {
+  background-color: #F8E8F8;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+} */
