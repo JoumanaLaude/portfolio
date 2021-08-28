@@ -2,7 +2,7 @@ import React from 'react';
 import windchime from './windchime.gif';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import styled from 'styled-components'
+// import styled from 'styled-components'
 
 function Landing() {
 

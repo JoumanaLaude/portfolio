@@ -1,23 +1,41 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from './jl-logo.png';
 import { NavLink } from './NavLink';
+import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from 'react-router-dom';
 
 function Navbar() {
+    const [isOpen, setIsOpen] = useState(false);
+
+    const showMenu = () => setIsOpen(!isOpen);
+
     return (
-            <div className="nav-grid">
-                <ul>
-                <img className="logo" src={logo} alt="logo"/> 
+        <div className="nav-grid">
+
+            <Link to='#' className="menu-bars">
+                <FontAwesomeIcon icon={faBars} className="fa-2x fa-fw" onClick={showMenu} />
+            </Link>
+
+            <nav className={isOpen ? 'nav-menu active' : 'nav-menu'}>
+                <ul className="nav-links">
+                    <li>
+                        <Link to='#' className="menu-bars">
+                            <FontAwesomeIcon icon={faTimes} onClick={showMenu} className="fa-2x fa-fw" />
+                        </Link>
+                    </li>
+
+                    <img className="logo" src={logo} alt="logo" />
                     {NavLink.map((item, index) => {
                         return (
-                            <div className="nav-links">
-                                <li key={index}>
-                                    <a className={item.name} href={item.url}>{item.title}</a>
-                                </li>
-                            </div>
-                        )
+                            <li key={index}>
+                                <Link to={item.path} className={item.name}>{item.title}</Link>
+                            </li>
+                        );
                     })}
                 </ul>
-            </div>
+            </nav>
+        </div>
     )
 }
 
