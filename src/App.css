@@ -238,8 +238,10 @@ li>a:focus::after{
     line-height: 2rem;
     display: flex;
     flex-direction: column;
-    padding-left: .5rem;
+    align-items: center;
+    padding-left: 0;
     padding-bottom: .5rem;
+    padding-top: 1rem;
   }
   a::after {
     content: '';

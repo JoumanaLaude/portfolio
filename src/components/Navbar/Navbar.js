@@ -29,7 +29,7 @@ function Navbar() {
                     {NavLink.map((item, index) => {
                         return (
                             <li key={index}>
-                                <Link to={item.path} className={item.name}>{item.title}</Link>
+                                <Link to={item.path} className={item.name} onClick={showMenu}>{item.title}</Link>
                             </li>
                         );
                     })}
