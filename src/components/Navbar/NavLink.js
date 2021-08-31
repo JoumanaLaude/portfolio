@@ -8,10 +8,5 @@ export const NavLink = [
         title: 'Projects',
         path: '/projects',
         name: 'nav-links'
-    },
-    {
-        title: 'Hobbies',
-        path: '/hobbies',
-        name: 'nav-links'
     }
 ]
