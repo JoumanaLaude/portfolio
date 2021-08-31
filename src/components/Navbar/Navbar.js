@@ -20,12 +20,12 @@ function Navbar() {
             <nav className={isOpen ? 'nav-menu active' : 'nav-menu'}>
                 <ul className="nav-links">
                     <li>
-                        <Link to='#' className="menu-bars">
+                        <Link to='#' className="menu-exit">
                             <FontAwesomeIcon icon={faTimes} onClick={showMenu} className="fa-2x fa-fw" />
                         </Link>
                     </li>
 
-                    <img className="logo" src={logo} alt="logo" />
+                    <Link to='/home' className="logo" onClick={showMenu}><img src={logo} alt="logo" /></Link>
                     {NavLink.map((item, index) => {
                         return (
                             <li key={index}>

@@ -2,10 +2,8 @@ import React from 'react';
 import windchime from './windchime.gif';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import styled from 'styled-components'
 
 function Landing() {
-
     return (
         <>
             <div className="left">
@@ -25,11 +23,5 @@ function Landing() {
         </>
     )
 }
-
-// const Socials = styled.ul`
-//     display: flex;
-//     flex-direction: row;
-//     align-items: center;
-// `;
 
 export default Landing;
