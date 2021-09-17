@@ -136,7 +136,8 @@ li>a:focus::after{
   }
 
   .intro-img {
-    width: 480px;
+    /* width: 480px; */
+    max-width: 100%;
   }
 }
 
@@ -182,6 +183,10 @@ li>a:focus::after{
   @keyframes animated-cursor{
     from{border-right-color: var(--darkColor);}
     to{border-right-color: transparent;}
+  }
+
+  .logo img {
+    height: 80px;
   }
 
   .joumana {

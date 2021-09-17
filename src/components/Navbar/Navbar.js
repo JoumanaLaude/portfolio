@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 // import logo from './jl-logo.png';
+import icon from './nav-icon.png';
 import { NavLink } from './NavLink';
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -25,7 +26,7 @@ function Navbar() {
                         </Link>
                     </li>
 
-                    {/* <Link to='/home' className="logo" onClick={showMenu}><img src={logo} alt="logo" /></Link> */}
+                    <Link to='/home' className="logo" onClick={showMenu}><img src={icon} alt="logo" /></Link>
                     {NavLink.map((item, index) => {
                         return (
                             <li key={index}>
