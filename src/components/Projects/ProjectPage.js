@@ -1,11 +1,15 @@
 import React from 'react';
+import Navbar from '../Navbar/Navbar';
 import { projects } from './ProjectData';
 import Projects from './ProjectComponent'
-
 function ProjectPage() {
     return (
-        <Projects data={projects} />
+        <>
+            <Navbar />
+            <Projects data={projects} />
+        </>
     )
 }
+
 
 export default ProjectPage;

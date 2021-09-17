@@ -2,10 +2,12 @@ import React from 'react';
 import windchime from './windchime.gif';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Navbar from '../Navbar/Navbar';
 
 function Landing() {
     return (
         <>
+        <Navbar />
             <div className="left">
                 <div className="hello"><i>Hello, my name is</i></div>
                 <div className="joumana">Joumana</div>

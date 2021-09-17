@@ -110,11 +110,11 @@ li>a:focus::after{
   .main-grid {
     display: grid;
     height: 100vh;
-    grid-template-columns: repeat(5, minmax(300px, 1fr));
+    grid-template-columns: repeat(4, minmax(240px, 1fr));
     grid-template-rows: repeat(3, minmax(240px, 1fr));
     grid-template-areas:
-      ". . . nav nav"
-      ". left left right .";
+      ". . nav ."
+      ". left right .";
   }
   .left { 
     grid-area: left;
@@ -150,7 +150,7 @@ li>a:focus::after{
     grid-template-rows: 1fr 2fr 1fr;
     grid-template-areas: 
     "nav"
-    "left left right";
+    "left . right";
     padding: 4rem;
   }
   .hello {
@@ -208,7 +208,7 @@ li>a:focus::after{
   }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 900px) and (max-width: 1500px) {
   .main-grid {
     padding: 2rem;
   }

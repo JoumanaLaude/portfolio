@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Navbar from './Navbar/Navbar';
+// import Navbar from './Navbar/Navbar';
 import Landing from './Landing/Landing';
 import About from './About/About';
 import Projects from './Projects/ProjectPage';
@@ -15,7 +15,6 @@ class Main extends Component {
 
         return (
             <>
-                <Navbar />
                 <Switch>
                     <Route path='/home' component={HomePage} />
                     <Route exact path='/about' component={About} />
