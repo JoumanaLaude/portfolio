@@ -16,10 +16,10 @@ class Main extends Component {
         return (
             <>
                 <Switch>
-                    <Route path='/home' component={HomePage} />
-                    <Route exact path='/about' component={About} />
-                    <Route exact path='/projects' component={Projects} />
-                    <Redirect to='/home' />
+                    <Route exact path='/' component={HomePage} />
+                    <Route path='/about' component={About} />
+                    <Route path='/projects' component={Projects} />
+                    <Redirect to='/' />
                 </Switch>
             </>
         );
