@@ -17,8 +17,8 @@ class Main extends Component {
             <>
                 <Switch>
                     <Route exact path='/' component={HomePage} />
-                    <Route path='/about' component={About} />
-                    <Route path='/projects' component={Projects} />
+                    <Route exact path='/about' component={About} />
+                    <Route exact path='/projects' component={Projects} />
                     <Redirect to='/' />
                 </Switch>
             </>
