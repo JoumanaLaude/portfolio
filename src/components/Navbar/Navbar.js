@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-// import logo from './jl-logo.png';
 import icon from './nav-icon.png';
 import { NavLink } from './NavLink';
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
@@ -30,7 +29,7 @@ function Navbar() {
                     {NavLink.map((item, index) => {
                         return (
                             <li key={index}>
-                                <Link to={item.path} className={item.name} onClick={showMenu}>{item.title}</Link>
+                                <Link to={item.path} className="nav-links" onClick={showMenu}>{item.title}</Link>
                             </li>
                         );
                     })}

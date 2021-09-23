@@ -1,5 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
+import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const ProjectComponent = ({ data }) => {
     return (
@@ -14,6 +17,16 @@ const ProjectComponent = ({ data }) => {
                             <br />{projects.tools}
 
                             <p>{projects.desc}</p>
+
+                            {/* wrap into row div */}
+                            <div>
+                                <a href={projects.link} target="_blank" rel="noreferrer noopener" className="icon-link">
+                                    <FontAwesomeIcon icon={faExternalLinkAlt} className="fa-2x fa-fw" />
+                                </a>
+                                <a href={projects.github} target="_blank" rel="noreferrer noopener" className="icon-link">
+                                    <FontAwesomeIcon icon={faGithub} className="fa-2x fa-fw" />
+                                </a>
+                            </div>
                         </Projects>
                     )
                 })}
@@ -42,6 +55,5 @@ const Projects = styled.div`
 const Img = styled.img`
     max-width: 100%;
 `;
-
 
 export default ProjectComponent;
