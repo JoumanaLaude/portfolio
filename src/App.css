@@ -21,6 +21,7 @@ p {
   font-family: 'Karla', sans-serif;
   font-size: 1rem;
   line-height: 1.6rem;
+  padding-top: 1.4rem;
 }
 
 a:link, a:visited, a:active {
@@ -131,17 +132,14 @@ li>a:focus::after{
   .right { 
     grid-area: right;
   }
-  
   .right, .left {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-
   .menu-bars, .menu-exit {
     display: none;
   }
-
   .intro-img {
     /* width: 480px; */
     max-width: 100%;
@@ -153,11 +151,11 @@ li>a:focus::after{
 }
 
 @media only screen and (max-width: 1500px) {
-  /* .main-grid {
+  .main-grid {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 2fr 1fr;
     padding: 4rem;
-  } */
+  }
   .hello {
     padding-top: 4rem;
   }
@@ -173,17 +171,14 @@ li>a:focus::after{
     font-family: monospace;
     margin: 0 auto;
   }
-
   .hello>i {
     animation: animated-text 3s steps(29,end) 1s 1 normal both,
       animated-cursor 500ms steps(29,end) infinite;
   }
-
   @keyframes animated-text{
     from{width: 0;}
     to{width: 240px;}
   }
-
   @keyframes animated-cursor{
     from{border-right-color: var(--darkColor);}
     to{border-right-color: transparent;}
