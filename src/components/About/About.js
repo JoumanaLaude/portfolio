@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from '../Navbar/Navbar';
-import filler from './anime-filler.gif';
+import bujou from './bujou.jpg';
+// import filler from './anime-filler.gif';
 import styled from 'styled-components';
 
 function About() {
@@ -10,11 +11,15 @@ function About() {
             <Grid>
                 <AboutMe>
                     <h1>About Me</h1>
-                    <p>Hello there! :) My name is Joumana and I was born and raised in Washington, DC. I first became interested in coding around the age of 10 when I built fansites for online games I played. I continued this hobby throughout my teen years, and graduated from university with an IT degree. Recently, I decided to partake in a coding bootcamp to be up to speed on the latest web development practices.</p>
-                    <p>I graduated from the bootcamp in September 2021 earning my certificate in Full Stack Development. I have built projects using React and React Native, and have learned about Express & MongoDB. I have started tackling my list of project ideas and everyday as I’m building things, I learn something new, which I find the most enjoyable.</p>
-                    <Img src={filler} alt="filler img" />
+                    <p>Hello there! :) My name is Joumana and I was born and raised in one of the most diverse cities in the world, Washington, DC. I have a great passion for front end development, and I am looking to become a full-time Front End Developer/Engineer.</p>
+                    <p>I recently graduated from Nucamp Bootcamp, and have started tackling my list of project ideas. Every day as I’m building things, I learn something new, which I find the most enjoyable.</p>
                     <h1>Hobbies</h1>
-                    <p>Other interests of mine include bullet journaling, reading fiction, watching Korean comedy shows, cooking, studying foreign languages, playing online games, and random crafting.</p>
+                    <p>Interests of mine include bullet journaling, reading fiction, watching Korean variety shows, anime, cooking my cravings, studying foreign languages, playing online games, and random crafting.</p> 
+                    <Img src={bujou} alt="photo of keyboard and bullet journal" />
+                    <h1>Coding Journey</h1>
+                    <p>I first became interested in coding at the age of 10 when I played an online game called Neopets. Neopets taught me the basics of HTML & CSS. I started creating fansites for a few games I played and hosted them for free. This was a hobby I enjoyed for years, so I decided to persue web development in college.</p>
+                    <p>My university only offered the very basics of coding courses, and throughout university & after, I was lost on how to learn more. I tried YouTube videos and resources like FreeCodeCamp and Udemy, but it didn't seem like I was progressing much. I worked in IT mainly because that was my major. I still had the desire to be a developer, so when COVID hit, I quit my job due to safety concerns and took this opportunity to become more serious about learning. I joined a coding bootcamp where I learned modern dev tools, such as React. The bootcamp has helped me find the proper path to continue self learning.</p>
+                    <p></p>
                 </AboutMe>
             </Grid>
         </>
@@ -31,9 +36,7 @@ const Grid = styled.div`
 `;
 
 const AboutMe = styled.div`
-    font-size: 1.2rem;
-    line-height: 2rem;
-    padding: 2rem;
+    padding-bottom: 4rem;
 `
 
 const Img = styled.img`
@@ -41,7 +44,7 @@ const Img = styled.img`
     margin-left: auto;
     margin-right: auto;
     max-width: 100%;
-    padding: 1rem 0 3rem;
+    padding-top: 1.6rem;
 `;
 
 export default About;

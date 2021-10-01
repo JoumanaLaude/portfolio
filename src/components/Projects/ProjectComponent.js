@@ -41,7 +41,6 @@ const Grid = styled.div`
     grid-column: 2 / 4;
     grid-template-columns: 2fr;
     grid-gap: 4rem;
-
     @media only screen and (min-width: 900px) and (max-width: 1500px) {
         margin: 0 8rem;
     }
@@ -49,7 +48,7 @@ const Grid = styled.div`
 
 const Projects = styled.div`
     font-size: 1.2rem;
-    padding: 2rem;
+    padding: 0 2rem 4rem;
 `;
 
 const Description = styled.div`
