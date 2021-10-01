@@ -19,14 +19,14 @@ const ProjectComponent = ({ data }) => {
                             <Title>{projects.title}</Title>
                             <p>{projects.tools}</p>
                             <Text>{projects.desc}</Text>
-                            <Icons>
+                            <div className="icon-link">
                                 <a href={projects.link} target="_blank" rel="noreferrer noopener" className="icon-link">
                                     <FontAwesomeIcon icon={faExternalLinkAlt} className="fa-2x fa-fw" />
                                 </a>
                                 <a href={projects.github} target="_blank" rel="noreferrer noopener" className="icon-link">
                                     <FontAwesomeIcon icon={faGithub} className="fa-2x fa-fw" />
                                 </a>
-                            </Icons>
+                            </div>
                         </Projects>
                     )
                 })}
@@ -41,22 +41,11 @@ const Grid = styled.div`
     grid-column: 2 / 4;
     grid-template-columns: 2fr;
     grid-gap: 4rem;
-
-    @media only screen and (min-width: 900px) and (max-width: 1500px) {
-        grid-column: 2 / 4;
-        grid-template-columns: .7fr;
-    }
 `;
 
 const Projects = styled.div`
     font-size: 1.2rem;
-    padding: 0 2rem;
-`;
-
-const Icons = styled.div`
-    display: flex;
-    flex-direction: row;
-    padding: 1rem 0 3rem 0;
+    padding: 0 2rem 4rem 2rem;
 `;
 
 const Description = styled.div`

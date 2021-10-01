@@ -12,9 +12,9 @@ function Landing() {
                 <div className="hello"><i>Hello, my name is</i></div>
                 <div className="joumana">Joumana</div>
                 <div className="intro">I’m a frontend developer who enjoys building unique web apps.
-                    <div className="socials">
-                        <a href="https://github.com/JoumanaLaude" aria-label="GitHub" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faGithub} className="fa-2x fa-fw socials" /></a>
-                        <a href="https://www.linkedin.com/in/joumana-laude/" aria-label="LinkedIn" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faLinkedin} className="fa-2x fa-fw socials" /></a>
+                    <div className="icon-link">
+                        <a href="https://github.com/JoumanaLaude" aria-label="GitHub" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faGithub} className="fa-2x fa-fw icon-link" /></a>
+                        <a href="https://www.linkedin.com/in/joumana-laude/" aria-label="LinkedIn" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faLinkedin} className="fa-2x fa-fw icon-link" /></a>
                     </div>
                 </div>
 
