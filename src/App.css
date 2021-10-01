@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&family=Clicker+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla&family=Arapey:ital@0;1&family=Clicker+Script&display=swap');
 
 * {
   box-sizing: border-box;
@@ -15,6 +15,12 @@ body {
   font-family: 'Arapey', serif;
   color: var(--darkColor);
   background: var(--lightColor);
+}
+
+p {
+  font-family: 'Karla', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6rem;
 }
 
 a:link, a:visited, a:active {

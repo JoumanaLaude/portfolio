@@ -40,10 +40,11 @@ const Grid = styled.div`
     grid-row: 2 / auto;
     grid-column: 2 / 4;
     grid-template-columns: 2fr;
-    grid-gap: 2rem;
+    grid-gap: 4rem;
 
-    @media only screen and (max-width: 901px) {
-        grid-template-columns: 1fr;
+    @media only screen and (min-width: 900px) and (max-width: 1500px) {
+        grid-column: 2 / 4;
+        grid-template-columns: .7fr;
     }
 `;
 
