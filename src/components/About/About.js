@@ -17,7 +17,7 @@ function About() {
                     <p>Interests of mine include bullet journaling, reading fiction, watching Korean variety shows, anime, cooking my cravings, studying foreign languages, playing online games, and random crafting.</p> 
                     <Img src={bujou} alt="photo of keyboard and bullet journal" />
                     <h1>Coding Journey</h1>
-                    <p>I first became interested in coding at the age of 10 when I played an online game called Neopets. Neopets taught me the basics of HTML & CSS. I started creating fansites for a few games I played and hosted them for free. This was a hobby I enjoyed for years, so I decided to persue web development in college.</p>
+                    <p>I first became interested in coding at the age of 10 when I played an online game called Neopets. Neopets taught me the basics of HTML & CSS. I started creating fansites for a few games I played and hosted them for free. This was a hobby I enjoyed for years, so I decided to pursue web development in college.</p>
                     <p>My university only offered the very basics of coding courses, and throughout university & after, I was lost on how to learn more. I tried YouTube videos and resources like FreeCodeCamp and Udemy, but it didn't seem like I was progressing much. I worked in IT mainly because that was my major. I still had the desire to be a developer, so when COVID hit, I quit my job due to safety concerns and took this opportunity to become more serious about learning. I joined a coding bootcamp where I learned modern dev tools, such as React. The bootcamp has helped me find the proper path to continue self learning.</p>
                     <p></p>
                 </AboutMe>
