@@ -14,7 +14,11 @@
 body {
   font-family: 'Arapey', serif;
   color: var(--darkColor);
-  background: var(--lightColor);
+  background-color: var(--lightColor);
+  background-image: radial-gradient( circle farthest-corner at 5.3% 17.2%,  rgba(255,208,253,1) 0%, rgba(255,237,216,1) 90% );
+  height: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 p {
