@@ -1,20 +1,30 @@
 import React from 'react';
 import styled from 'styled-components';
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faReact, faSass, faHtml5, faCss3Alt, faJs, faBootstrap, faWordpress, faMdb, faFigma, faNodeJs, faNode } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const ProjectComponent = ({ data }) => {
     return (
-        <>
-            <Grid>
-                <Description>
-                    <h1>Projects</h1>
-                    <Text>Here are some of my personal front end projects. I still add to them and find ways to improve them as I learn while also working on new projects.</Text>
-                </Description>
+        <Grid>
+            <section>
+                <h1>Projects & Skills</h1>
+                <p>Here are some of my personal projects. As I learn more, I update and improve what I have while also working on new projects.<br /><br /><center>Technologies I have worked with:</center></p>
+                <Skills>
+                    <FontAwesomeIcon icon={faReact} className="fa-3x fa-fw" />
+                    <FontAwesomeIcon icon={faSass} className="fa-3x fa-fw" />
+                    <FontAwesomeIcon icon={faHtml5} className="fa-3x fa-fw" alt="" />
+                    <FontAwesomeIcon icon={faCss3Alt} className="fa-3x fa-fw" />
+                    <FontAwesomeIcon icon={faJs} className="fa-3x fa-fw" />
+                    <FontAwesomeIcon icon={faBootstrap} className="fa-3x fa-fw" />
+                    <FontAwesomeIcon icon={faWordpress} className="fa-3x fa-fw" />
+                    <FontAwesomeIcon icon={faFigma} className="fa-3x fa-fw" />
+                    <FontAwesomeIcon icon={faMdb} className="fa-3x fa-fw" />
+                    <FontAwesomeIcon icon={faNode} className="fa-3x fa-fw" />
+                </Skills>
                 {data.map((projects, index) => {
                     return (
-                        <Projects key={index}>
+                        <div key={index}>
                             <Img src={projects.img} alt={projects.title} />
                             <Title>{projects.title}</Title>
                             <p>{projects.tools}</p>
@@ -27,11 +37,11 @@ const ProjectComponent = ({ data }) => {
                                     <FontAwesomeIcon icon={faGithub} className="fa-2x fa-fw" />
                                 </a>
                             </div>
-                        </Projects>
+                        </div>
                     )
                 })}
-            </Grid>
-        </>
+            </section>
+        </Grid>
     )
 }
 
@@ -46,15 +56,13 @@ const Grid = styled.div`
     }
 `;
 
-const Projects = styled.div`
-    font-size: 1.2rem;
-    padding: 0 2rem 4rem;
-`;
-
-const Description = styled.div`
-    font-size: 1.2rem;
-    line-height: 2rem;
-    padding: 3rem 2rem 0;
+const Skills = styled.div`
+    display: flex;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 1rem;
 `;
 
 const Text = styled.p`
@@ -63,6 +71,7 @@ const Text = styled.p`
 
 const Img = styled.img`
     max-width: 100%;
+    padding-top: 7rem;
 `;
 
 const Title = styled.h1`

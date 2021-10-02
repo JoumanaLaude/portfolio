@@ -9,7 +9,7 @@ function About() {
         <>
         <Navbar />
             <Grid>
-                <AboutMe>
+                <section>
                     <h1>About Me</h1>
                     <p>Hello there! :) My name is Joumana and I was born and raised in one of the most diverse cities in the world, Washington, DC. I have a great passion for front end development, and I am looking to become a full-time Front End Developer/Engineer.</p>
                     <p>I recently graduated from Nucamp Bootcamp, and have started tackling my list of project ideas. Every day as I’m building things, I learn something new, which I find the most enjoyable.</p>
@@ -20,7 +20,7 @@ function About() {
                     <p>I first became interested in coding at the age of 10 when I played an online game called Neopets. Neopets taught me the basics of HTML & CSS. I started creating fansites for a few games I played and hosted them for free. This was a hobby I enjoyed for years, so I decided to pursue web development in college.</p>
                     <p>My university only offered the very basics of coding courses, and throughout university & after, I was lost on how to learn more. I tried YouTube videos and resources like FreeCodeCamp and Udemy, but it didn't seem like I was progressing much. I worked in IT mainly because that was my major. I still had the desire to be a developer, so when COVID hit, I quit my job due to safety concerns and took this opportunity to become more serious about learning. I joined a coding bootcamp where I learned modern dev tools, such as React. The bootcamp has helped me find the proper path to continue self learning.</p>
                     <p></p>
-                </AboutMe>
+                </section>
             </Grid>
         </>
     )
@@ -34,10 +34,6 @@ const Grid = styled.div`
         margin: 0 8rem;
     }
 `;
-
-const AboutMe = styled.div`
-    padding-bottom: 4rem;
-`
 
 const Img = styled.img`
     display: block;
