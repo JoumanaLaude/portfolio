@@ -1,8 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
-import { faGithub, faReact, faSass, faHtml5, faCss3Alt, faJs, faBootstrap, faWordpress, faMdb, faFigma, faNodeJs, faNode } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faReact, faSass, faHtml5, faCss3Alt, faJs, faBootstrap, faWordpress, faMdb, faFigma, faNode } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Animated from './Animated';
 
 const ProjectComponent = ({ data }) => {
     return (
@@ -11,16 +12,16 @@ const ProjectComponent = ({ data }) => {
                 <h1>Projects & Skills</h1>
                 <p>Here are some of my personal projects. As I learn more, I update and improve what I have while also working on new projects.<br /><br /><center>Technologies I have worked with:</center></p>
                 <Skills>
-                    <FontAwesomeIcon icon={faReact} className="fa-3x fa-fw" />
-                    <FontAwesomeIcon icon={faSass} className="fa-3x fa-fw" />
-                    <FontAwesomeIcon icon={faHtml5} className="fa-3x fa-fw" alt="" />
-                    <FontAwesomeIcon icon={faCss3Alt} className="fa-3x fa-fw" />
-                    <FontAwesomeIcon icon={faJs} className="fa-3x fa-fw" />
-                    <FontAwesomeIcon icon={faBootstrap} className="fa-3x fa-fw" />
-                    <FontAwesomeIcon icon={faWordpress} className="fa-3x fa-fw" />
-                    <FontAwesomeIcon icon={faFigma} className="fa-3x fa-fw" />
-                    <FontAwesomeIcon icon={faMdb} className="fa-3x fa-fw" />
-                    <FontAwesomeIcon icon={faNode} className="fa-3x fa-fw" />
+                    <Animated rotation={20} timing={200}><FontAwesomeIcon icon={faReact} className="fa-3x fa-fw" alt="React" /></Animated>
+                    <Animated rotation={20} timing={200}><FontAwesomeIcon icon={faSass} className="fa-3x fa-fw" alt="Sass" /></Animated>
+                    <Animated rotation={20} timing={200}><FontAwesomeIcon icon={faHtml5} className="fa-3x fa-fw" alt="HTML5" /></Animated>
+                    <Animated rotation={20} timing={200}><FontAwesomeIcon icon={faCss3Alt} className="fa-3x fa-fw" alt="CSS3" /></Animated>
+                    <Animated rotation={20} timing={200}><FontAwesomeIcon icon={faJs} className="fa-3x fa-fw" alt="JavaScript" /></Animated>
+                    <Animated rotation={20} timing={200}><FontAwesomeIcon icon={faBootstrap} className="fa-3x fa-fw" alt="Bootstrap" /></Animated>
+                    <Animated rotation={20} timing={200}><FontAwesomeIcon icon={faWordpress} className="fa-3x fa-fw" alt="WordPress" /></Animated>
+                    <Animated rotation={20} timing={200}><FontAwesomeIcon icon={faFigma} className="fa-3x fa-fw" alt="Figma" /></Animated>
+                    <Animated rotation={20} timing={200}><FontAwesomeIcon icon={faMdb} className="fa-3x fa-fw" alt="MongoDB" /></Animated>
+                    <Animated rotation={20} timing={200}><FontAwesomeIcon icon={faNode} className="fa-3x fa-fw" alt="NodeJS" /></Animated>
                 </Skills>
                 {data.map((projects, index) => {
                     return (
