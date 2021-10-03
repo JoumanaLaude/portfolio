@@ -6,7 +6,7 @@ export const projects = [
         title: "Spacetagram",
         img: space,
         role: "Frontend Developer & UI",
-        tools: "React, NASA APOD API",
+        tools: "React, NASA API, localStorage",
         desc: "Responsive web app where users can view new media daily from NASA and also browse through random media from the past.",
         github: "https://github.com/JoumanaLaude/spacetagram",
         link: "https://dailyspace.netlify.app/"

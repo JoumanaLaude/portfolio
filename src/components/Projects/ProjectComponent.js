@@ -30,8 +30,7 @@ const ProjectComponent = ({ data }) => {
                                 <Img src={projects.img} alt={projects.title} /></a>
                             <div className="card-content">
                                 <Title>{projects.title}</Title>
-                                <p>{projects.tools}</p>
-                                <Text>{projects.desc}</Text>
+                                <p>{projects.tools}<br /><br />{projects.desc}</p>
                                 <div className="icon-link">
                                     <a href={projects.link} target="_blank" rel="noreferrer noopener" aria-label="Launch site" className="icon-link">
                                         <FontAwesomeIcon icon={faExternalLinkAlt} className="fa-2x fa-fw" /></a>
@@ -64,10 +63,6 @@ const Skills = styled.div`
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding-top: 1rem;
-`;
-
-const Text = styled.p`
     padding-top: 1rem;
 `;
 
