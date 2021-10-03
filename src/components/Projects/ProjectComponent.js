@@ -25,18 +25,18 @@ const ProjectComponent = ({ data }) => {
                 </Skills>
                 {data.map((projects, index) => {
                     return (
-                        <div key={index}>
+                        <div key={index} className="card">
                             <Img src={projects.img} alt={projects.title} />
-                            <Title>{projects.title}</Title>
-                            <p>{projects.tools}</p>
-                            <Text>{projects.desc}</Text>
-                            <div className="icon-link">
-                                <a href={projects.link} target="_blank" rel="noreferrer noopener" className="icon-link">
-                                    <FontAwesomeIcon icon={faExternalLinkAlt} className="fa-2x fa-fw" />
-                                </a>
-                                <a href={projects.github} target="_blank" rel="noreferrer noopener" className="icon-link">
-                                    <FontAwesomeIcon icon={faGithub} className="fa-2x fa-fw" />
-                                </a>
+                            <div className="card-content">
+                                <Title>{projects.title}</Title>
+                                <p>{projects.tools}</p>
+                                <Text>{projects.desc}</Text>
+                                <div className="icon-link">
+                                    <a href={projects.link} target="_blank" rel="noreferrer noopener" className="icon-link">
+                                        <FontAwesomeIcon icon={faExternalLinkAlt} className="fa-2x fa-fw" /></a>
+                                    <a href={projects.github} target="_blank" rel="noreferrer noopener" className="icon-link">
+                                        <FontAwesomeIcon icon={faGithub} className="fa-2x fa-fw" /></a>
+                                </div>
                             </div>
                         </div>
                     )
@@ -72,7 +72,6 @@ const Text = styled.p`
 
 const Img = styled.img`
     max-width: 100%;
-    padding-top: 7rem;
 `;
 
 const Title = styled.h1`

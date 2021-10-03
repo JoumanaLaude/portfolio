@@ -1,6 +1,6 @@
 // import filler from './autumn-gif.gif';
-import space from './images/dailyspace.gif'
-import cafe from './images/clichecafe.gif'
+import space from './images/project-dailyspace.gif'
+import cafe from './images/project-clichecafe.gif'
 
 export const projects = [
     {

@@ -21,6 +21,15 @@ body {
   background-attachment: fixed;
 }
 
+::-moz-selection {
+  background: var(--darkColor); 
+  color: var(--lightColor);
+}
+::selection {
+  background: var(--darkColor);
+  color: var(--lightColor);
+}
+
 p {
   font-family: 'Karla', sans-serif;
   font-size: 1rem;
@@ -127,6 +136,20 @@ li>a:focus::after{
 	transform: scale(.8);
 }
 
+.card {
+  border-radius: .4rem .4rem .5rem .5rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  margin: 7rem;
+}
+
+.card-content {
+  padding: 2rem;
+  background: rgba(237,216,255,.7)
+}
+
 @media only screen and (min-width: 901px) {
   .main-grid {
     display: grid;
@@ -196,7 +219,6 @@ li>a:focus::after{
     from{border-right-color: var(--darkColor);}
     to{border-right-color: transparent;}
   }
-
   .joumana {
     animation: fadeIn 5s;
     animation-delay: 4s;
@@ -218,6 +240,9 @@ li>a:focus::after{
       opacity:1;
       visibility: visible;
     }
+  }
+  .card{
+    margin: 4rem 0;
   }
 }
 
