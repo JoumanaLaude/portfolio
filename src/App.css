@@ -144,7 +144,6 @@ li>a:focus::after{
   overflow: hidden;
   margin: 7rem;
 }
-
 .card-content {
   padding: 2rem;
   background: rgba(237,216,255,.7)
@@ -164,7 +163,6 @@ li>a:focus::after{
     grid-area: left;
     padding-right: 1.6rem;
    }
-  
   .right { 
     grid-area: right;
   }
@@ -180,10 +178,15 @@ li>a:focus::after{
     /* width: 480px; */
     max-width: 100%;
   }
+  h1 {
+    padding-top: 0;
+  }
 }
 
-.project {
-  position: absolute;
+@media only screen and (min-width: 1200px) and (max-width: 1500px) {
+  .card {
+    margin: 6rem 12rem;
+  }
 }
 
 @media only screen and (max-width: 1500px) {
@@ -241,9 +244,6 @@ li>a:focus::after{
       visibility: visible;
     }
   }
-  .card{
-    margin: 4rem 0;
-  }
 }
 
 @media only screen and (max-width: 900px) {
@@ -289,5 +289,8 @@ li>a:focus::after{
     grid-template-areas: 
     "mobile"
     "left left right";
+  }
+  .card{
+    margin: 4rem 0;
   }
 }

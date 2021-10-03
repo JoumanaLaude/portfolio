@@ -10,7 +10,7 @@ const ProjectComponent = ({ data }) => {
         <Grid>
             <section>
                 <h1>Projects & Skills</h1>
-                <p>Here are some of my personal projects. As I learn more, I update and improve what I have while also working on new projects.<br /><br /><center>Technologies I have worked with:</center></p>
+                <p>Here are some of my personal projects. As I learn more, I update and improve what I have while also working on new projects.<br /><br />Technologies I have worked with:</p>
                 <Skills>
                     <Animated rotation={20} timing={200}><FontAwesomeIcon icon={faReact} className="fa-3x fa-fw" alt="React" /></Animated>
                     <Animated rotation={20} timing={200}><FontAwesomeIcon icon={faSass} className="fa-3x fa-fw" alt="Sass" /></Animated>
@@ -26,15 +26,16 @@ const ProjectComponent = ({ data }) => {
                 {data.map((projects, index) => {
                     return (
                         <div key={index} className="card">
-                            <Img src={projects.img} alt={projects.title} />
+                            <a href={projects.link} target="_blank" rel="noreferrer noopener" aria-label="Launch site">
+                                <Img src={projects.img} alt={projects.title} /></a>
                             <div className="card-content">
                                 <Title>{projects.title}</Title>
                                 <p>{projects.tools}</p>
                                 <Text>{projects.desc}</Text>
                                 <div className="icon-link">
-                                    <a href={projects.link} target="_blank" rel="noreferrer noopener" className="icon-link">
+                                    <a href={projects.link} target="_blank" rel="noreferrer noopener" aria-label="Launch site" className="icon-link">
                                         <FontAwesomeIcon icon={faExternalLinkAlt} className="fa-2x fa-fw" /></a>
-                                    <a href={projects.github} target="_blank" rel="noreferrer noopener" className="icon-link">
+                                    <a href={projects.github} target="_blank" rel="noreferrer noopener" aria-label="Github" className="icon-link">
                                         <FontAwesomeIcon icon={faGithub} className="fa-2x fa-fw" /></a>
                                 </div>
                             </div>
@@ -50,10 +51,10 @@ const Grid = styled.div`
     display: grid;
     grid-row: 2 / auto;
     grid-column: 2 / 4;
-    grid-template-columns: 2fr;
+    grid-template-columns: 1fr;
     grid-gap: 4rem;
     @media only screen and (min-width: 900px) and (max-width: 1500px) {
-        margin: 0 8rem;
+        margin: 0 2rem;
     }
 `;
 
