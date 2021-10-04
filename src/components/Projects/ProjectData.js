@@ -16,7 +16,7 @@ export const projects = [
         img: cafe,
         role: "Frontend Developer & UI",
         tools: "React, Reactstrap, SCSS",
-        desc: "My first React project (outside of my bootcamp project) is this cafe website. I created reusable components to utilize on each page. This was converted from a Bootstrap site I first developed, and then converted it to Reactstrap.",
+        desc: "My first React project (outside of my bootcamp project) is this cafe website. I created reusable components to utilize on each page. This was migrated from the site I made using Bootstrap.",
         github: "https://github.com/JoumanaLaude/cliche-cafe-react",
         link: "https://clichecafe.netlify.app/"
     }
