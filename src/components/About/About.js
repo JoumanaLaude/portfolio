@@ -9,7 +9,17 @@ function About() {
     const fade = useSpring({
         from: { opacity: 0, marginTop: 300 },
         to: { opacity: 1, marginTop: 0 },
+        config: { delay: 1000, duration: 400 }
+    });
+    const hobbies = useSpring({
+        from: { opacity: 0, marginTop: 300 },
+        to: { opacity: 1, marginTop: 0 },
         config: { delay: 1000, duration: 500 }
+    });
+    const picture = useSpring({
+        from: { opacity: 0, marginTop: 300 },
+        to: { opacity: 1, marginTop: 0 },
+        config: { delay: 2000, duration: 800 }
     });
     // to is not required w/ spring
 
@@ -22,10 +32,12 @@ function About() {
                         <h1>About Me</h1>
                         <p>Hello there! :) My name is Joumana and I was born and raised in one of the most diverse cities in the world, Washington, DC. I have a great passion for front end development, and I am looking to become a full-time Front End Developer/Engineer.</p>
                         <p>I recently graduated from Nucamp Bootcamp, and have started tackling my list of project ideas. Every day as I’m building things, I learn something new, which I find the most enjoyable.</p>
-                        </animated.div>
-                        <animated.div style={fade}>
+                    </animated.div>
+                    <animated.div style={hobbies}>
                         <h1>Hobbies</h1>
                         <p>Interests of mine include bullet journaling, reading fiction, watching Korean variety shows, anime, cooking my cravings, studying foreign languages, playing online games, and random crafting.</p>
+                    </animated.div>
+                    <animated.div style={picture}>
                         <Img src={bujou} alt="photo of keyboard and bullet journal" />
                     </animated.div>
                     <h1>Coding Journey</h1>

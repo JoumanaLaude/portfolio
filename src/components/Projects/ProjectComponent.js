@@ -1,4 +1,5 @@
 import React from 'react';
+import { useSpring, animated } from 'react-spring';
 import styled from 'styled-components';
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faReact, faSass, faHtml5, faCss3Alt, faJs, faBootstrap, faWordpress, faMdb, faFigma, faNode } from '@fortawesome/free-brands-svg-icons';
@@ -6,11 +7,31 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Animated from './Animated';
 
 const ProjectComponent = ({ data }) => {
+    const fade = useSpring({
+        from: { opacity: 0, marginTop: 300 },
+        to: { opacity: 1, marginTop: 0 },
+        config: { delay: 1000, duration: 500 }
+    });
+    const tech = useSpring({
+        from: { opacity: 0, marginTop: 300 },
+        to: { opacity: 1, marginTop: 0 },
+        config: { delay: 1000, duration: 700 }
+    });
+    const projects = useSpring({
+        from: { opacity: 0, marginTop: 300 },
+        to: { opacity: 1, marginTop: 0 },
+        config: { delay: 2000, duration: 2000 }
+    });
+
     return (
         <Grid>
             <section>
-                <h1>Projects & Skills</h1>
-                <p>Here are some of my personal projects. As I learn more, I update and improve what I have while also working on new projects.<br /><br />Technologies I have worked with:</p>
+                <animated.div style={fade}>
+                    <h1>Projects & Skills</h1>
+                    <p>Here are some of my personal projects. As I learn more, I update and improve what I have while also working on new projects.</p>
+                </animated.div>
+                <animated.div style={tech}>
+                <center><p>Technologies I have worked with:</p></center>
                 <Skills>
                     <Animated rotation={20} timing={200}><FontAwesomeIcon icon={faReact} className="fa-3x fa-fw" alt="React" /></Animated>
                     <Animated rotation={20} timing={200}><FontAwesomeIcon icon={faSass} className="fa-3x fa-fw" alt="Sass" /></Animated>
@@ -23,6 +44,8 @@ const ProjectComponent = ({ data }) => {
                     <Animated rotation={20} timing={200}><FontAwesomeIcon icon={faMdb} className="fa-3x fa-fw" alt="MongoDB" /></Animated>
                     <Animated rotation={20} timing={200}><FontAwesomeIcon icon={faNode} className="fa-3x fa-fw" alt="NodeJS" /></Animated>
                 </Skills>
+            </animated.div>
+            <animated.div style={projects}>
                 {data.map((projects, index) => {
                     return (
                         <div key={index} className="card">
@@ -41,8 +64,9 @@ const ProjectComponent = ({ data }) => {
                         </div>
                     )
                 })}
-            </section>
-        </Grid>
+            </animated.div>
+        </section>
+        </Grid >
     )
 }
 
