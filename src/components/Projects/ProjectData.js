@@ -1,5 +1,6 @@
 import space from './images/spacetagram.jpg'
 import cafe from './images/clichecafe.png'
+import mixormatch from './images/mix-or-match.png'
 
 export const projects = [
     {
@@ -19,6 +20,15 @@ export const projects = [
         desc: "My first React project (outside of my bootcamp project) is this cafe website. I created reusable components to utilize on each page. This was migrated from the site I made using Bootstrap.",
         github: "https://github.com/JoumanaLaude/cliche-cafe-react",
         link: "https://clichecafe.netlify.app/"
+    },
+    {
+        title: "Halloween Mix-or-Match (Clone)",
+        img: mixormatch,
+        role: "Object Oriented Design Learning",
+        tools: "HTML, CSS, Vanilla JS, Audio",
+        desc: "Halloween themed matching card game using CSS Grid and Vanilla JS. Cloned from a YT tutorial to become more familiar with object oriented design.",
+        github: "https://github.com/JoumanaLaude/mix-or-match",
+        link: "https://halloween-match.netlify.app/"
     }
     // ,
     // {
