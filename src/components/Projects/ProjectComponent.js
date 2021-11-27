@@ -33,16 +33,16 @@ const ProjectComponent = ({ data }) => {
                 <animated.div style={tech}>
                 <center><p>Technologies I have worked with:</p></center>
                 <Skills>
-                    <Animated rotation={20} timing={200}><FontAwesomeIcon icon={faReact} className="fa-3x fa-fw" alt="React" /></Animated>
-                    <Animated rotation={20} timing={200}><FontAwesomeIcon icon={faSass} className="fa-3x fa-fw" alt="Sass" /></Animated>
-                    <Animated rotation={20} timing={200}><FontAwesomeIcon icon={faHtml5} className="fa-3x fa-fw" alt="HTML5" /></Animated>
-                    <Animated rotation={20} timing={200}><FontAwesomeIcon icon={faCss3Alt} className="fa-3x fa-fw" alt="CSS3" /></Animated>
-                    <Animated rotation={20} timing={200}><FontAwesomeIcon icon={faJs} className="fa-3x fa-fw" alt="JavaScript" /></Animated>
-                    <Animated rotation={20} timing={200}><FontAwesomeIcon icon={faBootstrap} className="fa-3x fa-fw" alt="Bootstrap" /></Animated>
-                    <Animated rotation={20} timing={200}><FontAwesomeIcon icon={faWordpress} className="fa-3x fa-fw" alt="WordPress" /></Animated>
-                    <Animated rotation={20} timing={200}><FontAwesomeIcon icon={faFigma} className="fa-3x fa-fw" alt="Figma" /></Animated>
-                    <Animated rotation={20} timing={200}><FontAwesomeIcon icon={faMdb} className="fa-3x fa-fw" alt="MongoDB" /></Animated>
-                    <Animated rotation={20} timing={200}><FontAwesomeIcon icon={faNode} className="fa-3x fa-fw" alt="NodeJS" /></Animated>
+                    <div><Animated rotation={20} timing={200}><FontAwesomeIcon icon={faReact} className="fa-3x fa-fw" alt="React" /></Animated><p className="icon-name">React</p></div>
+                    <div><Animated rotation={20} timing={200}><FontAwesomeIcon icon={faSass} className="fa-3x fa-fw" alt="Sass" /></Animated><p className="icon-name">Sass</p></div>
+                    <div><Animated rotation={20} timing={200}><FontAwesomeIcon icon={faHtml5} className="fa-3x fa-fw" alt="HTML5" /></Animated><p className="icon-name">HTML5</p></div>
+                    <div><Animated rotation={20} timing={200}><FontAwesomeIcon icon={faCss3Alt} className="fa-3x fa-fw" alt="CSS3" /></Animated><p className="icon-name">CSS3</p></div>
+                    <div><Animated rotation={20} timing={200}><FontAwesomeIcon icon={faJs} className="fa-3x fa-fw" alt="JavaScript" /></Animated><p className="icon-name">JavaScript</p></div>
+                    <div><Animated rotation={20} timing={200}><FontAwesomeIcon icon={faBootstrap} className="fa-3x fa-fw" alt="Bootstrap" /></Animated><p className="icon-name">Bootstrap</p></div>
+                    <div><Animated rotation={20} timing={200}><FontAwesomeIcon icon={faWordpress} className="fa-3x fa-fw" alt="WordPress" /></Animated><p className="icon-name">WordPress</p></div>
+                    <div><Animated rotation={20} timing={200}><FontAwesomeIcon icon={faFigma} className="fa-3x fa-fw" alt="Figma" /></Animated><p className="icon-name">Figma</p></div>
+                    <div><Animated rotation={20} timing={200}><FontAwesomeIcon icon={faMdb} className="fa-3x fa-fw" alt="MongoDB" /></Animated><p className="icon-name">MongoDB</p></div>
+                    <div><Animated rotation={20} timing={200}><FontAwesomeIcon icon={faNode} className="fa-3x fa-fw" alt="NodeJS" /></Animated><p className="icon-name">NodeJS</p></div>
                 </Skills>
             </animated.div>
             <animated.div style={projects}>
