@@ -18,13 +18,12 @@ function About() {
 
     return (
         <>
-            {/* <Navbar /> */}
             <Grid>
                 <section>
                     <animated.div style={fade}>
                         <h1>About Me</h1>
-                        <p>Hello there! :) My name is Joumana and I was born and raised in one of the most diverse cities in the world, Washington, DC. I've had a great passion for building websites since I was 10 where I started coding through an online game called Neopets. I love putting together clean layouts and making them accessible for all users. I recently graduated from a coding bootcamp, which gave me a more structured path to continue self-learning. I have started tackling my list of project ideas while seeking a career as a front-end developer.
-                        <br /><br />Some interests of mine include journaling, reading fiction, watching Korean variety shows, anime, cooking my cravings, studying foreign languages, playing online games, and random crafting.</p>
+                        <p>Hello there! :) My name is Joumana and I was born and raised in one of the most diverse cities in the world, Washington, DC. I've had a great passion for building websites since I was 10 when I first started coding through an online game called Neopets. I love putting together clean layouts and making them accessible for all users. I have a background in IT and recently graduated from a coding bootcamp, which gave me a more structured path to continue self-learning. I have started tackling my list of project ideas while seeking a career as a front-end developer.
+                            <br /><br />Some interests of mine include journaling, reading fiction, watching Korean variety shows, anime, cooking my cravings, studying foreign languages, playing online games, and random crafting.</p>
                     </animated.div>
                     <animated.div style={picture}>
                         <Img src={bujou} alt="photo of keyboard and bullet journal" />

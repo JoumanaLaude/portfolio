@@ -1,11 +1,9 @@
-import React from "react";
-import Navbar from "../Navbar/Navbar";
-import { projects } from "./ProjectData";
-import Projects from "./ProjectComponent"
+import React from 'react';
+import { projects } from './ProjectData';
+import Projects from './Cards'
 function ProjectPage() {
     return (
         <>
-            <Navbar />
             <Projects data={projects} />
         </>
     )

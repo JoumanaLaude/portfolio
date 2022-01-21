@@ -12,7 +12,7 @@
 }
 
 body {
-  font-family: "Arapey", serif;
+  font-family: "Karla", Verdana, sans-serif;
   color: var(--darkColor);
   background-color: var(--lightColor);
   background-image: radial-gradient( circle farthest-corner at 5.3% 17.2%,  rgba(237,216,255,1) 0%, rgba(255,237,216,1) 90% );
@@ -31,9 +31,9 @@ body {
 }
 
 p {
-  font-family: "Karla", sans-serif;
-  font-size: 1rem;
-  line-height: 1.6rem;
+  font-family: "Karla", Verdana, sans-serif;
+  font-size: 17px;
+  line-height: 1.8rem;
   padding: 1.4rem 0;
 }
 
@@ -61,12 +61,12 @@ ul {
 
 .joumana {  
   font-family: "Clicker Script", cursive;
-  font-size: 7rem;
+  font-size: 6rem;
 }
 
 .intro {
-  font-size: 1.6rem;
-  padding: 1rem 0.5rem 1rem 2.4rem;
+  font-size: 1.4rem;
+  padding: 1.2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -74,11 +74,11 @@ ul {
 
 .logo img {
   height: 90px;
+  padding: 6px;
 }
 
 .icon-link {
   display: flex;
-  flex-direction: row;
   margin: .5rem 0.2rem 0 0;
 }
 
@@ -94,17 +94,16 @@ ul {
 .nav-grid {
   grid-area: nav;
   display: flex;
-  flex-direction: row;
   align-items: center;
 }
 
 .nav-links {
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   text-transform: uppercase;
-  padding: 1rem;
   text-decoration: none;
   list-style-type: none;
   align-items: center;
+  padding: 1rem 1rem .5rem 1rem;
 }
 
 a {
@@ -118,7 +117,7 @@ a::after {
 	bottom: 0;
 	left: 0;
 	width: 100%;
-	height: .4em;
+	height: .3em;
 	background-color: var(--darkColor);
 	opacity: 0;
 	transition: opacity 300ms, transform 300ms;
@@ -126,7 +125,6 @@ a::after {
 
 a:focus::after {
 	opacity: 1;
-	transform: translate3d(0, 0.2em, 0);
 }
 
 li>a::after {
@@ -136,7 +134,7 @@ li>a::after {
 
 li>a:hover::after,
 li>a:focus::after{
-	transform: scale(.8);
+	transform: scale(.5);
 }
 
 .icon-name {
@@ -209,47 +207,6 @@ li>a:focus::after{
     flex-direction: column;
     align-items: center;
   }
-  .hello>i {
-    border-right: solid 3px var(--darkColor);
-    white-space: nowrap;
-    overflow: hidden;    
-    font-family: monospace;
-    margin: 0 auto;
-  }
-  .hello>i {
-    animation: animated-text 3s steps(29,end) 1s 1 normal both,
-      animated-cursor 500ms steps(29,end) infinite;
-  }
-  @keyframes animated-text{
-    from{width: 0;}
-    to{width: 240px;}
-  }
-  @keyframes animated-cursor{
-    from{border-right-color: var(--darkColor);}
-    to{border-right-color: transparent;}
-  }
-  .joumana {
-    animation: fadeIn 5s;
-    animation-delay: 4s;
-    animation-fill-mode: forwards;
-    visibility: hidden;
-  }
-  .intro {
-    animation: fadeIn 5s;
-    animation-delay: 6s;
-    animation-fill-mode: forwards;
-    visibility: hidden;
-  }
-  @keyframes fadeIn {
-    0% {
-      opacity:0;
-      visibility: hidden;
-    }
-    100% {
-      opacity:1;
-      visibility: visible;
-    }
-  }
 }
 
 @media only screen and (max-width: 900px) {
@@ -268,6 +225,7 @@ li>a:focus::after{
   .nav-menu {
     display: grid;
     grid-area: mobile;
+    padding-bottom: 20px;
     background: var(--lightColor);
     border-right: 1px solid var(--darkColor);
     border-bottom: 1px solid var(--darkColor);

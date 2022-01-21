@@ -1,4 +1,3 @@
-import React from "react";
 import windchime from "./windchime.gif";
 import { faLinkedin, faGithub, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
