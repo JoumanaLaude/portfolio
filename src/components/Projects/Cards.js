@@ -38,15 +38,15 @@ const ProjectComponent = ({ data }) => {
                         <div><Animated rotation={20} timing={200}><FontAwesomeIcon icon={faHtml5} className="fa-3x fa-fw" alt="HTML5" /></Animated><IconName>HTML5</IconName></div>
                         <div><Animated rotation={20} timing={200}><FontAwesomeIcon icon={faCss3Alt} className="fa-3x fa-fw" alt="CSS3" /></Animated><IconName>CSS3</IconName></div>
                         <div><Animated rotation={20} timing={200}><FontAwesomeIcon icon={faJsSquare} className="fa-3x fa-fw" alt="JavaScript" /></Animated><IconName>JavaScript</IconName></div>
+                        </Skills>
+                        <Skills>
                         <div><Animated rotation={20} timing={200}><FontAwesomeIcon icon={faBootstrap} className="fa-3x fa-fw" alt="Bootstrap" /></Animated><IconName>Bootstrap</IconName></div>
-                    </Skills>
-                    <Skills>
                         <div><Animated rotation={20} timing={200}><FontAwesomeIcon icon={faWordpress} className="fa-3x fa-fw" alt="WordPress" /></Animated><IconName>WordPress</IconName></div>
                         <div><Animated rotation={20} timing={200}><FontAwesomeIcon icon={faFigma} className="fa-3x fa-fw" alt="Figma" /></Animated><IconName>Figma</IconName></div>
-                        <div><Animated rotation={20} timing={200}><FontAwesomeIcon icon={faGit} className="fa-3x fa-fw" alt="Git" /></Animated><IconName>Git</IconName></div>
-                        <div><Animated rotation={20} timing={200}><FontAwesomeIcon icon={faYarn} className="fa-3x fa-fw" alt="Yarn" /></Animated><IconName>Yarn</IconName></div>
                         <div><Animated rotation={20} timing={200}><FontAwesomeIcon icon={faMdb} className="fa-3x fa-fw" alt="MongoDB" /></Animated><IconName>MongoDB</IconName></div>
                         <div><Animated rotation={20} timing={200}><FontAwesomeIcon icon={faNode} className="fa-3x fa-fw" alt="NodeJS" /></Animated><IconName>NodeJS</IconName></div>
+                        <div><Animated rotation={20} timing={200}><FontAwesomeIcon icon={faGit} className="fa-3x fa-fw" alt="Git" /></Animated><IconName>Git</IconName></div>
+                        <div><Animated rotation={20} timing={200}><FontAwesomeIcon icon={faYarn} className="fa-3x fa-fw" alt="Yarn" /></Animated><IconName>Yarn</IconName></div>
                     </Skills>
                 </animated.div>
                 <animated.div style={projects}>
@@ -87,8 +87,9 @@ const Grid = styled.div`
 
 const Skills = styled.div`
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
+    gap: 10px;
 `;
 
 const IconName = styled.p`

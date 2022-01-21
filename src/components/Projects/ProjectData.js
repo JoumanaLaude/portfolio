@@ -24,7 +24,7 @@ export const projects = [
         title: "Personal Portfolio",
         img: portfolio,
         tools: "React, CSS Grid, Flexbox, React Spring, React Router DOM",
-        desc: `Since this is a *personal* portfolio I created a responsive layout from scratch with custom CSS and media queries. I used a simple design with a theme that fits what I personally like. I have separate page components for the "about" and "projects" sections for easier scrolling.`,
+        desc: `Since this is a *personal* portfolio I created a responsive layout from scratch with custom CSS and media queries. I used a simple design with a theme that fits what I personally like. I have separate page components for the "about" and "projects" sections for easier viewing.`,
         github: "https://github.com/JoumanaLaude/portfolio",
         link: "https://joumana.netlify.app/"
     },
