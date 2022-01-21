@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from 'react';
-import { animated, useSpring } from 'react-spring';
+import React, { useState, useEffect } from "react";
+import { animated, useSpring } from "react-spring";
 
 const Animated = ({ rotation = 0, timing = 150, children }) => {
     const [isBooped, setIsBooped] = useState(false);
     const style = useSpring({
-        display: 'inline-block',
-        backfaceVisibility: 'hidden',
+        display: "inline-block",
+        backfaceVisibility: "hidden",
         transform: isBooped
             ? `rotate(${rotation}deg)`
             : `rotate(0deg)`,

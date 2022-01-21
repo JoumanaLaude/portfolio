@@ -1,10 +1,10 @@
-import React from 'react';
-import { useSpring, animated } from 'react-spring';
-import styled from 'styled-components';
+import React from "react";
+import { useSpring, animated } from "react-spring";
+import styled from "styled-components";
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
-import { faGithub, faReact, faSass, faHtml5, faCss3Alt, faJs, faBootstrap, faWordpress, faMdb, faFigma, faNode } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faReact, faSass, faHtml5, faCss3Alt, faJs, faBootstrap, faWordpress, faMdb, faFigma, faNode } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Animated from './Animated';
+import Animated from "./Animated";
 
 const ProjectComponent = ({ data }) => {
     const fade = useSpring({

@@ -1,6 +1,6 @@
-import space from './images/spacetagram.jpg'
-import cafe from './images/clichecafe.png'
-import mixormatch from './images/mix-or-match.png'
+import space from "./images/spacetagram.jpg"
+import cafe from "./images/clichecafe.png"
+import mixormatch from "./images/mix-or-match.png"
 
 export const projects = [
     {
