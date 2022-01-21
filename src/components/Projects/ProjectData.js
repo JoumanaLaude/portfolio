@@ -36,26 +36,4 @@ export const projects = [
         github: "https://github.com/JoumanaLaude/mix-or-match",
         link: "https://halloween-match.netlify.app/"
     }
-    // ,
-    // {
-    //     title: "Animal Crossing Database",
-    //     img: filler,
-    //     tools: "React JS, API",
-    //     desc: "description here",
-    //     github: ""
-    // },
-    // {
-    //     title: "React Native Campsite App",
-    //     img: filler,
-    //     tools: "React Native",
-    //     desc: "description here",
-    //     github: "https://github.com/JoumanaLaude/react-native-nucamp"
-    // },
-    // {
-    //     title: "HiLo Game",
-    //     img: filler,
-    //     tools: "React Native",
-    //     desc: "description here",
-    //     github: "https://github.com/JoumanaLaude/hilo-game"
-    // }
 ]

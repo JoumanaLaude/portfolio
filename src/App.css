@@ -61,7 +61,10 @@ ul {
 
 .joumana {  
   font-family: "Clicker Script", cursive;
-  font-size: 6rem;
+  font-size: 7rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
 }
 
 .intro {
@@ -72,14 +75,19 @@ ul {
   align-items: center;
 }
 
+.intro-img {
+  max-width: 100%;
+  box-shadow: 3rem 3rem var(--lightColor), -2rem -2rem rgba(255,237,216,1);
+}
+
 .logo img {
   height: 90px;
-  padding: 6px;
+  padding-right: 1rem;
 }
 
 .icon-link {
   display: flex;
-  margin: .5rem 0.2rem 0 0;
+  margin: .5rem 0.2rem 1rem 0;
 }
 
 .icon-link>a::after, .menu-bars::after, .menu-exit::after, .logo::after {
@@ -87,7 +95,6 @@ ul {
 }
 
 .icon-link>a:hover, .logo>a:hover {
-  transition: opacity 300ms ease-in-out;
   opacity: .5;
 }
 
@@ -99,19 +106,28 @@ ul {
 
 .nav-links {
   font-size: 1.3rem;
+  font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
   list-style-type: none;
   align-items: center;
-  padding: 1rem 1rem .5rem 1rem;
+  padding: 1rem;
+  justify-content: space-between;
+}
+
+.nav-links a:hover {
+  color: var(--darkColor);
+  background: #edd8ff;
+  opacity: .8;
 }
 
 a {
 	display: block;
 	position: relative;
+  transition: all .4s ease;
 }
 
-a::after {
+/* a::after {
 	content: "";
 	position: absolute;
 	bottom: 0;
@@ -125,7 +141,7 @@ a::after {
 
 a:focus::after {
 	opacity: 1;
-}
+} */
 
 li>a::after {
 	opacity: 1;
@@ -162,7 +178,7 @@ li>a:focus::after{
   }
   .left { 
     grid-area: left;
-    padding-right: 1.6rem;
+    padding-right: 2rem;
    }
   .right { 
     grid-area: right;
@@ -174,10 +190,6 @@ li>a:focus::after{
   }
   .menu-bars, .menu-exit {
     display: none;
-  }
-  .intro-img {
-    /* width: 480px; */
-    max-width: 100%;
   }
 }
 
@@ -193,9 +205,6 @@ li>a:focus::after{
     grid-template-rows: 1fr 2fr 1fr;
     padding: 4rem;
   }
-  .hello {
-    padding-top: 4rem;
-  }
   .hello, .intro, .joumana, .right {
     display: flex;
     flex-direction: column;
@@ -209,9 +218,6 @@ li>a:focus::after{
   }
   .hello {
     padding-top: 2rem;
-  }
-  .intro-img {
-    max-width: 100%;
   }
   .logo img {
     padding-top: 1.2rem;

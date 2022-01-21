@@ -25,7 +25,7 @@ function Navbar() {
                         </Link>
                     </li>
 
-                    <Link to="/home" className="logo" onClick={showMenu}><img src={icon} alt="logo" /></Link>
+                    <Link to="/home" className="logo" onClick={showMenu}><img src={icon} alt="home" /></Link>
                     {NavLink.map((item, index) => {
                         return (
                             <li key={index}>
