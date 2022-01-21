@@ -137,12 +137,6 @@ li>a:focus::after{
 	transform: scale(.5);
 }
 
-.icon-name {
-  display: flex;
-  justify-content: center;
-  align-self: center;
-}
-
 .card {
   border-radius: .4rem .4rem .5rem .5rem;
   box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
