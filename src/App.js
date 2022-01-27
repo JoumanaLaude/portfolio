@@ -6,13 +6,13 @@ import About from "./components/About/About";
 import { Switch, Route, Redirect } from "react-router-dom";
 import "./App.css";
 import { BrowserRouter } from "react-router-dom";
-import ReactGa from "react-ga";
+import ReactGA from "react-ga";
 
 function App() {
 
   useEffect(() => {
-    ReactGa.initialize("UA-218438232-1")
-    ReactGa.pageview(window.location.pathname + window.location.search)
+    ReactGA.initialize("UA-218438232-1");
+    ReactGA.pageview(window.location.pathname + window.location.search);
   }, [])
 
   return (
