@@ -2,6 +2,7 @@ import space from "./images/explore.png"
 import cafe from "./images/clichecafe.png"
 import portfolio from "./images/portfolio.png"
 import mixormatch from "./images/mix-or-match.png"
+import wurklo from "./images/wurklo-landing.png"
 
 export const projects = [
     {
@@ -11,6 +12,14 @@ export const projects = [
         desc: "Responsive web app with custom CSS that fetches images and videos from NASA's API that date back to 1995.",
         github: "https://github.com/JoumanaLaude/spacetagram-v2",
         link: "https://prettyspacious.netlify.app/"
+    },
+    {
+        title: "Wurklo",
+        img: wurklo,
+        tools: "React, Reactstrap, React Router DOM",
+        desc: "Built landing page components and collaborated with creator to make sitely changes. Styled Reactstrap components, created custom CSS timeline, and created media queries for responsive views.",
+        github: "https://github.com/JoumanaLaude/wurklo-landing-page",
+        link: "https://www.wurklo.com/"
     },
     {
         title: "Cliche Cafe",
