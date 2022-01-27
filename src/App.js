@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Landing from "./components/Landing/Landing";
 import Navbar from "./components/Navbar/Navbar";
 import Projects from "./components/Projects/ProjectPage";
@@ -6,9 +6,14 @@ import About from "./components/About/About";
 import { Switch, Route, Redirect } from "react-router-dom";
 import "./App.css";
 import { BrowserRouter } from "react-router-dom";
-// import ReactGa from "react-ga";
+import ReactGa from "react-ga";
 
 function App() {
+
+  useEffect(() => {
+    ReactGa.initialize("G-FKDTFN6M8K")
+    ReactGa.pageview(window.location.pathname + window.location.search)
+  }, [])
 
   return (
     <BrowserRouter>

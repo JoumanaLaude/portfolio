@@ -16,7 +16,7 @@ export const projects = [
     {
         title: "Wurklo",
         img: wurklo,
-        tools: "React, Reactstrap, React Router DOM",
+        tools: "React, Reactstrap, React Router 6",
         desc: "Built landing page components and collaborated with creator to make sitely changes. Styled Reactstrap components, created custom CSS timeline, and created media queries for responsive views.",
         github: "https://github.com/JoumanaLaude/wurklo-landing-page",
         link: "https://www.wurklo.com/"
